@@ -15,6 +15,11 @@ test("changes to 'dark' mode when the button is clicked", () => {
 
   expect(container.querySelector(".App.dark")).toBeInTheDocument();
 });
+test("changes to 'dark' mode", () => {
+  render(<App />);
+  screen.debug(); // Shows the rendered HTML
+  // ... rest of test
+});
 
 test("changes back to 'light' mode when the button is clicked twice", () => {
   const { container } = render(<App />);
